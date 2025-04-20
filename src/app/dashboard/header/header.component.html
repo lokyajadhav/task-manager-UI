@@ -1,0 +1,15 @@
+
+
+<mat-toolbar class="mainheader">
+  <mat-toolbar-row>
+
+    <img src="assets/logo.png" alt="My App Logo" style="width: 40px; height: 40px;" />
+
+ <p class="brandname"> Task Manager</p>
+ <div class="spacer">
+
+  </div>
+  <p style="margin-right: 20px; color:rgb(252, 251, 251); padding-left: 10px;padding-right: 10px; border: solid 1px brown; font-size: 13px; position: relative;top: 3px;">{{role}}</p>
+  <p class="time" style="cursor: pointer;" (click)="logout()">Logount <mat-icon style="position: relative; top: 5px;">logout</mat-icon></p>
+  </mat-toolbar-row>
+  </mat-toolbar>

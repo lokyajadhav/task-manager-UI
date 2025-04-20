@@ -1,0 +1,94 @@
+/* Full screen centered container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e0eaff, #f9f9f9);
+    padding: 1rem;
+  }
+  
+  /* Card-style login box */
+  .login-box {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 400px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Heading style */
+  .login-box h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  /* Group spacing */
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Inputs */
+  input {
+    width: 90%;
+   
+    padding: 0.9rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Role toggle buttons */
+  .role-toggle {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .role-toggle button {
+    flex: 1;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .role-toggle button:hover,
+  .role-toggle button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  /* Submit button */
+  button[type="submit"] {
+    width: 100%;
+    padding: 0.9rem;
+    background: #007bff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background: #0056b3;
+  }
+  
