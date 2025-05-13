@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TaskManagerService } from '../task-manager.service';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
   loginForm: FormGroup;
 
 
@@ -19,7 +19,14 @@ export class LoginComponent {
       role: ['Developer']  // default role
     });
   }
-
+  ngOnInit(): void {
+    console.log("inside the ng login");
+this.ngloginnMethodTest();
+  }
+ngloginnMethodTest()
+{
+  console.log("iside method")
+}
   onSubmit() {
     if (this.loginForm.valid) {
 
