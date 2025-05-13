@@ -12,9 +12,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class TaskViewComponent {
   assignForm!: FormGroup;
-  displayedColumns: string[] = ['title', 'description', 'assignedTo', 'status','action'];
+  displayedColumns: string[] = ['task-id','title', 'description', 'assignedTo', 'status','action'];
   dataSource = new MatTableDataSource<any>();
-  displayedColumns1: string[] = ['title', 'description', 'status','action'];
+  displayedColumns1: string[] = ['task-id','title', 'description', 'status','action'];
   dataSource1 = new MatTableDataSource<any>();
   statusOptions: string[] = ['NOT_STARTED', 'IN_PROGRESS', 'COMPLETED'];
   selectedStatus:any
